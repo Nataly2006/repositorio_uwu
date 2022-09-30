@@ -1,0 +1,54 @@
+<html>
+<body>
+	<div id='background'>
+        <div id='character' style='position:absolute; top:100px; left:450px; 
+		background-image: url("img/down1.png"); width:59px; height:86px;'></div>
+		<div id='character2' style='position:absolute; top:100px; left:450px; 
+		background-image: url("img/down1.png"); width:59px; height:86px;'></div>
+		
+    </div>
+    <script type="text/javascript">
+	    var leftValueP1 = 450, topValueP1 = 100;
+	    var leftValueP2 = 250, topValueP2 = 50;
+		
+    	function update(){
+    		document.getElementById("character").style.left = leftValueP1+"px";
+    		document.getElementById("character").style.top = topValueP1+"px";
+    
+    		document.getElementById("character2").style.left = leftValueP2+"px";
+    		document.getElementById("character2").style.top = topValueP2+"px";
+    
+		}
+
+    	document.onkeydown = function(e){
+    		console.log(e);
+    		if(e.keyCode == 37) { // LEFT
+    			leftValueP1 = leftValueP1 - 10;
+    		}
+    		else if (e.keyCode == 38) { // RIGHT
+    			topValueP1 = topValueP1 - 10;    		
+    		}			
+    		else if (e.keyCode == 39) { // RIGHT
+    			leftValueP1 = leftValueP1 + 10;    		
+    		}
+    		else if (e.keyCode == 40) { // DOWN
+				topValueP1 = topValueP1 + 10;
+    		}
+			if(e.keyCode == 65) { // LEFT
+    			leftValueP2 = leftValueP2 - 10;
+    		}
+    		else if (e.keyCode == 87) { // RIGHT
+    			topValueP2 = topValueP2 - 10;    		
+    		}			
+    		else if (e.keyCode == 68) { // RIGHT
+    			leftValueP2 = leftValueP2 + 10;    		
+    		}
+    		else if (e.keyCode == 83) { // DOWN
+				topValueP2 = topValueP2 + 10;
+    		}
+    		// ...
+    		update();
+    	}
+    </script>
+</body>
+</html>
