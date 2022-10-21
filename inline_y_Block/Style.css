@@ -1,0 +1,16 @@
+h1, h2 {
+    display: inline;
+    background-color: cyan;
+}
+label, input {
+    display: block;
+}
+p {
+    display: inline-block;
+    width: 160px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: rgb(128, 194, 194);
+    margin: 10px;
+    }
+    
