@@ -114,11 +114,49 @@
     function drawWorld(){
         output = "";
 
-        for(var row = 0; row = world.length; )
+        for(var row = 0; row < world.length; row++){
+            output += "<div class='row'>"
+            for(var x = 0; x < world[row].length; x++){
+                output += "<div class ='" + worldDict[
+                world[row][x]] +"'></div>"
+                //worldDict[worl[x]]
+            }
+        }
 
-        document.getElementById('world').innerHTML=
+        document.getElementById('world').innerHTML ="<div class="row">
+            <div class="warll"></div>
+            <div class="warll"></div>
+            <div class="warll"></div>
+            <div class="warll"></div>
+            <div class="warll"></div>
+        </div>
+
+        <div class="row">
+            <div class="warll"></div>
+            <div class="blank"></div>
+            <div class="sushi"></div>
+            <div class="sushi"></div>
+            <div class="warll"></div>
+        </div>
+
+        <div class="row">
+            <div class="warll"></div>
+            <div class="warll"></div>
+            <div class="warll"></div>
+            <div class="warll"></div>
+            <div class="warll"></div>
+        </div>
+
+        <div class="row">
+            <div class="warll"></div>
+            <div class="sushi"></div>
+            <div class="warll"></div>
+            <div class="sushi"></div>
+            <div class="warll"></div>
+        </div>"
         output;
     }
+    drawWorld()
 
 </script>
 <html>
