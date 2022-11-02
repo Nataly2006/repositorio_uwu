@@ -1,0 +1,41 @@
+h1{
+    text-align: center;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.container {
+    background-color: rgb(143, 143, 143);
+    margin: 15px;
+    padding: 20px;
+}
+.container1{
+    background-color: rgb(250, 156, 253);
+    margin: 15px;
+    padding: 20px;
+}
+.container2 {
+    background-color: rgb(163, 241, 241);
+    margin: 15px;
+    padding: 20px;
+}
+/*
+.img{
+    padding: 30px;
+
+    height: 200px;
+    width: 210px;
+    display: inline-block;
+
+    justify-content: space-between;
+    margin: 10px;
+}*/
+
+
+img.octocat {
+    height: 200px;
+}
+
