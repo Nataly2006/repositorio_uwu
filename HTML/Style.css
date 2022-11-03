@@ -1,0 +1,49 @@
+
+.nav{
+    background-color: #333333;
+    margin: 1px;
+    padding: 3px;
+    height: 80px;
+    width: 1000px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-title{
+    color: white;
+    font-family: cursive;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    vertical-align: 10%;
+}
+.nav-links{
+    color:white;
+    font-family: cursive;
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    margin:1px;
+}
+.owo{
+    color: rgb(204, 204, 204);
+    justify-content: space-around;
+    margin: 10px;
+}
+.active{
+    color: white;
+    margin: 10px;
+
+}
+.uwu{
+    color: rgb(209, 209, 209);
+    justify-content: space-around;
+    margin: 10px;
+}
+.btn{
+    background-color:  rgb(97, 202, 228);
+    color: white;
+    font-size: 16px;
+    box-shadow: 5px 5px #000000;
+    margin: 20px;
+} 
