@@ -1,0 +1,50 @@
+*{
+outline: solid rgb(199, 199, 199) 1px;
+}
+body{
+    background-color: rgb(199, 199, 199);
+}
+h1{
+    text-align: center;
+    font-family: cursive;
+}
+.row{
+    margin: .8em;
+    padding: .2em;
+    display:flex;
+}
+.col{
+    flex: 1;
+    margin: .3em;
+    padding: .9em;
+    background-color: aquamarine;
+    text-align: center;
+
+}
+.col-1{
+    flex: 1;
+    margin: .0em;
+    padding: .0em;
+    background-color: rgb(199, 199, 199);
+}
+.col-2{
+    flex: 2;
+    margin: .3em;
+    padding: .9em;
+    background-color: aquamarine;
+    text-align: center;
+
+}
+
+.col-3{
+    flex: 3;
+    margin: .3em;
+    padding: .9em;
+    background-color: aquamarine;
+    text-align: center;
+}
+.col-x{
+}
+.col-e{
+
+}
