@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f3f3;
+}
+
+a { 
+    color: #085394; 
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.top {
+    background-color: #000000;
+    height: 55px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 3.2rem;
+    color: rgb(255, 255, 255);
+font-family: cursive;
+display: flex;
+align-items: center;
+margin-left: 50px;
+vertical-align: 10%;
+}
+
+.btn {
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    border: 2px solid #000;
+    box-shadow: 4px 4px #000;
+    cursor: pointer;
+}
+
+.login {
+    background-color: #2b78e4;
+    color: #fff;
+}
+.flex-2 { 
+    flex: 2; 
+}
