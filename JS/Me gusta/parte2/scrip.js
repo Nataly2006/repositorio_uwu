@@ -1,10 +1,10 @@
-var btn2 = 12;
+var btn = 9;
 var countElement = document.querySelector("#btn2")
 
 console.log(countElement);
 
-function add1() {
-    btn2++;
-    countElement.innerText = btn2 +"like(s)";
+function add2() {
+    btn++;
+    countElement.innerText = btn +"like(s)";
     console.log(btn2);
 }

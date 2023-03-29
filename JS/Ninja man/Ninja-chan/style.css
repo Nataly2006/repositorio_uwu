@@ -54,3 +54,49 @@ line-height: 0;
     left: 40px;
     top: 40px;
 }
+
+.box {
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 30px;
+    border: 2px solid #999;
+    border-radius: 5px;
+}
+
+.definition {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+body{
+    margin:10px;
+}
+.left {
+    flex: 1;
+    text-align: center;
+}
+
+.left p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+.container {
+    margin: 0 auto;
+}
+.btn.like{
+background-color: #ffd966;
+border: 1px solid #000;
+box-shadow: 4px 4px #000;
+width: 50px;
+font-family: cursive;
+}
+h2{
+    font-family: cursive;
+}
+p{
+    font-family: cursive;
+}
+h4{
+    font-family: cursive;
+}
+
