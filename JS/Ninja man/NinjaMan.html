@@ -12,7 +12,7 @@
 
         .row {
         line-height: 0;
-        }.warll {
+        }.wall {
             background-color: aquamarine;
             height: 40px;
             width: 40px;
@@ -51,64 +51,29 @@
 
 <body>
 
-    <div id="world">
-        <div class="row">
-            <div class = "warll"></div>
-            <div class = "warll"></div>
-            <div class = "warll"></div>
-            <div class = "warll"></div>
-            <div class = "warll"></div>
-        </div>
-
-        <div class="row">
-            <div class = "warll"></div>
-            <div class = "blank"></div>
-            <div class = "sushi"></div>
-            <div class = "sushi"></div>
-            <div class = "warll"></div>
-        </div>
-
-        <div class="row">
-            <div class = "warll"></div>
-            <div class = "warll"></div>
-            <div class = "warll"></div>
-            <div class = "warll"></div>
-            <div class = "warll"></div>
-        </div>
-
-        <div class="row">
-            <div class = "warll"></div>
-            <div class = "sushi"></div>
-            <div class = "warll"></div>
-            <div class = "sushi"></div>
-            <div class = "warll"></div>
-        </div>
-
-
-        <div class="row">
-            <div class = "warll"></div>
-            <div class = "sushi"></div>
-            <div class = "sushi"></div>
-            <div class = "sushi"></div>
-            <div class = "warll"></div>
-        </div>
-    </div>
+    <div id="world"></div>
 
     <div id="ninjaMan"></div>
-
+<!--CONTENIDO Javascript-->
 </body>
 <script type="text/javascript">
     var world= [
         [1,1,1,1,1],
         [1,0,2,2,1],
         [1,2,1,2,1],
+        [1,2,2,2,1],//pimer cubito
+        [1,2,2,2,1],
+        [1,2,1,2,1],
+        [1,2,2,2,1],
+        [1,2,2,2,1],
+        [1,2,1,2,1],
         [1,2,2,2,1],
         [1,1,1,1,1],
     ];
     var worldDict = {
-        0:'blank',
-        1:'wall',
-        2:'sushi'
+        0: 'blank',
+        1: 'wall',
+        2: 'sushi'
     }
 
     function drawWorld(){
@@ -119,11 +84,13 @@
             for(var x = 0; x < world[row].length; x++){
                 output += "<div class ='" + worldDict[
                 world[row][x]] +"'></div>"
-                //worldDict[worl[x]]
             }
+            output += "</div>"
         }
 
-        document.getElementById('world').innerHTML ={
-    } drawWorld()
+        document.getElementById('world').innerHTML =
+        output;
+    } 
+    drawWorld()
 </script>
-<html>
+</html>
