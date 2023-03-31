@@ -51,8 +51,49 @@ line-height: 0;
     background-image: url('img/ninja.gif');
     background-size: contain;
     position: absolute;
-    left: 40px;
-    top: 40px;
+    left: 74px;
+    top: 70px;
+}
+.pink {
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-image: url('img/pinky.gif');
+    background-size: contain;
+    position: absolute;
+    left: 250px;
+    top: 144px;
+}
+.blu {
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-image: url('img/bluey.gif');
+    background-size: contain;
+    position: absolute;
+    left: 426px;
+    top: 267px;
+}
+.scar {
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-image: url('img/scaredy.gif');
+    background-size: contain;
+    position: absolute;
+    left: 514px;
+    top: 117px;
+}
+.onig{
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-image: url('img/onigiri.png');
+    background-size:contain;
 }
 
 .box {

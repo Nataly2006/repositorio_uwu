@@ -1,0 +1,29 @@
+body{
+    font-family: cursive;
+}
+.nav {
+    background-color: #46ccf9;
+    color: #ffffff;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-around;
+}
+.B{
+    color: white;
+}
+.C{
+    color: white;
+}
+.D{
+    color: white;
+}
