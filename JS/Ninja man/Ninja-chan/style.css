@@ -43,7 +43,7 @@ line-height: 0;
     display: inline-block;
 }
 
-#ninjaMan {
+.ninjaMan {
     background-color: black;
     height: 40px;
     width: 40px;
