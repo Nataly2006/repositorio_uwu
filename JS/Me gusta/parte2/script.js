@@ -5,7 +5,7 @@ span = [
         document.querySelector("#post-3")
 ]
 
-function btn(id) {
+function like(id) {
     btn[id]++;
     span[id].innerHTML = btn[id] + "likes";
 }
