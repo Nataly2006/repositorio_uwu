@@ -10,9 +10,9 @@
     <div class="nav">
         <h1 class="nav-titulo">DojoWeather</h1>
         <ul class="nav-links">
-            <li><a class="B" href="#" onclick="message()">Burbank</a></li>
-            <li><a class="C" href="#" onclick="message()">Chicago</a></li>
-            <li><a class="D" href="#" onclick="message()">Dallas</a></li>
+            <li onclick="message()"><a class="B" href="#">Burbank</a></li>
+            <li onclick="message()"><a class="C" href="#">Chicago</a></li>
+            <li onclick="message()"><a class="D" href="#">Dallas</a></li>
         </ul>
     </div>
     <!--FIN BARRA NAV-->
@@ -20,14 +20,14 @@
     <!-- inicio del container central-->
     <div class="container">
         <div class="sub-contain">
-                <h1>San Jose</h1>
-                <form>
-                    <label>Show temperature in </label>
-                    <select name="temperature-scale" onchange="convert(this)">
-                        <option>°C</option>
-                        <option>°F</option>
-                    </select>
-                </form>
+            <h1>San Jose</h1>
+            <form>
+                <label>Show temperature in </label>
+                <select name="temperature-scale" onchange="convert(this)">
+                    <option>°C</option>
+                    <option>°F</option>
+                </select>
+            </form>
         </div>
         <div class="black"></div>
         <div class="row">
@@ -35,9 +35,9 @@
                 <h2 class="tit">Today</h2>
                 <img src="img/some_rain.png" alt="img" class="imagen">
                 <h3>Some rain</h3>
-                <div class="Temperature">
-                    <span class="high" id="temp5">24</span>
-                    <span class="low" id="temp6">18</span>
+                <div class="temperature">
+                    <span class="high" id="temp1">24</span>
+                    <span class="low" id="temp2">18</span>
                 </div>
 
             </div>
@@ -45,9 +45,9 @@
                 <h2 class="tit">Tomarrow</h2>
                 <img src="img/some_sun.png" alt="img" class="imagen">
                 <h3>Some sun</h3>
-                <div class="Temperature">
-                    <span class="high" id="temp5">27</span>
-                    <span class="low" id="temp6">19</span>
+                <div class="temperature">
+                    <span class="high" id="temp3">27</span>
+                    <span class="low" id="temp4">19</span>
                 </div>
 
             </div>
@@ -55,7 +55,7 @@
                 <h2 class="tit">Friday</h2>
                 <img src="img/some_clouds.png" alt="img" class="imagen">
                 <h3>Some clouds</h3>
-                <div class="Temperature">
+                <div class="temperature">
                     <span class="high" id="temp5">21</span>
                     <span class="low" id="temp6">16</span>
                 </div>
@@ -64,24 +64,26 @@
                 <h2 class="tit">Saturday</h2>
                 <img src="img/some_sun.png" alt="img" class="imagen">
                 <h3>Some sun</h3>
-                <div class="Temperature">
+                <div class="temperature">
                     <span class="high" id="temp7">26</span>
                     <span class="low" id="temp8">21</span>
                 </div>
             </div>
         </div>
-        <div class="subCookie">
+        <!--inicio Container que se deve remover en JS-->
+        <div class="sub-Cookie">
             <div class="col-1"><img class="Cookie" src="img/cookie.png"></div>
             <div class="col2">
                 <h4 class="sub-titulo">Stop! Cookie Time</h4>
                 <p class="text">We use cookies (sadly not the edible ones)
                     to personalize</p>
-                    <p class="text"> content and ads, to provide social media
+                <p class="text"> content and ads, to provide social media
                     feactures and to</p>
-                    <p class="text"> analyse our traffic.<a href="#">Read more...</a></p>
+                <p class="text"> analyse our traffic.<a href="#" class="link">Read more...</a></p>
             </div>
             <div class="col-3"><button class="Accept" onclick="accept()">I Accept</button></div>
         </div>
+        <!--Fin Container que se deve remover en JS-->
     </div>
     <!-- Fin del container central-->
 
