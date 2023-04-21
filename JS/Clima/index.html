@@ -3,7 +3,6 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -11,96 +10,82 @@
     <div class="nav">
         <h1 class="nav-titulo">DojoWeather</h1>
         <ul class="nav-links">
-            <li><a class="B" href="#">Burbank</a></li>
-            <li><a class="C" href="#">Chicago</a></li>
-            <li><a class="D" href="#">Dallas</a></li>
+            <li><a class="B" href="#" onclick="message()">Burbank</a></li>
+            <li><a class="C" href="#" onclick="message()">Chicago</a></li>
+            <li><a class="D" href="#" onclick="message()">Dallas</a></li>
         </ul>
     </div>
     <!--FIN BARRA NAV-->
 
     <!-- inicio del container central-->
     <div class="container">
-    <ul class="sub-contain">
-        <li><h1>San Jose</h1></li>
-        <div><h3 class="cubito">show Temperature in<a><button>°C</button>
-            <button>➷</button></a></h3>
-            </div>
-    </ul>
-    <div class="row">
-        <div class="col">
-            <table>
-                <tr>
-                    <th><img class="icon" src="img/icon.png" alt="icon-img"></th>
-                    <th>
-                        <h2 class="tit">SERVICES</h2>
-                    </th>
-                </tr>
-            </table>
-            <!--TEXTO inicio-->
-            <div class="info">
-                <h3 class="text">You have an idea abount where you want your
-                    business to go? need some help getting there?
-                    We are the experts at helping our customers
-                    take their business to the next stage. We
-                    look forward to transforming your business...</h3>
-            </div>
-            <!--TEXTO fin-->
-            <button>More info</button>
+        <div class="sub-contain">
+                <h1>San Jose</h1>
+                <form>
+                    <label>Show temperature in </label>
+                    <select name="temperature-scale" onchange="convert(this)">
+                        <option>°C</option>
+                        <option>°F</option>
+                    </select>
+                </form>
         </div>
-        <div class="col">
-                        <h2 class="tit">Ejemplo</h2>
-            <!--TEXTO inicio-->
-            <img
-        
-            <!--TEXTO fin-->
-            <button>More info</button>
-        </div>
-        <div class="col">
-            <table>
-                <tr>
-                    <td><img class="icon" src="img/icon.png" alt="icon-img"></td>
-                    <th>
-                        <h2 class="tit">PROJECTS</h2>
-                        </th>
-                </tr>
-            </table>
-            <!--TEXTO inicio-->
-            <div class="info">
-                <h3 class="text">We worked with Pinktrip, a local fashion
-                    retailer,in 2010. they had a dream to take their business
-                    to the next level and draw in a national base of customers,
-                    while retaing the local feel of their store online.
-                    We redesigned ...
-                </h3>
+        <div class="black"></div>
+        <div class="row">
+            <div class="col">
+                <h2 class="tit">Today</h2>
+                <img src="img/some_rain.png" alt="img" class="imagen">
+                <h3>Some rain</h3>
+                <div class="Temperature">
+                    <span class="high" id="temp5">24</span>
+                    <span class="low" id="temp6">18</span>
+                </div>
+
             </div>
-            <!--TEXTO fin-->
-            <button>More info</button>
-        </div>
-        <div class="col">
-            <table>
-                <tr>
-                    <td><img class="icon" src="img/icon.png" alt="icon-img"></td>
-                    <td>
-                        <h2 class="tit">CLIENTS</h2>
-                        </td>
-                </tr>
-            </table>
-            <!--TEXTO inicio-->
-            <div class="info">
-                <h3 class="text">We have worked with avariety of business
-                    avarying from non-profit to corporate to retail. Although
-                    our clients have ranged in size to large corporations, our
-                    niche is helping small and medium sized clients discover ...
-                </h3>
+            <div class="col">
+                <h2 class="tit">Tomarrow</h2>
+                <img src="img/some_sun.png" alt="img" class="imagen">
+                <h3>Some sun</h3>
+                <div class="Temperature">
+                    <span class="high" id="temp5">27</span>
+                    <span class="low" id="temp6">19</span>
+                </div>
+
             </div>
-            <!--TEXTO fin-->
-            <button>More info</button>
+            <div class="col">
+                <h2 class="tit">Friday</h2>
+                <img src="img/some_clouds.png" alt="img" class="imagen">
+                <h3>Some clouds</h3>
+                <div class="Temperature">
+                    <span class="high" id="temp5">21</span>
+                    <span class="low" id="temp6">16</span>
+                </div>
+            </div>
+            <div class="col">
+                <h2 class="tit">Saturday</h2>
+                <img src="img/some_sun.png" alt="img" class="imagen">
+                <h3>Some sun</h3>
+                <div class="Temperature">
+                    <span class="high" id="temp7">26</span>
+                    <span class="low" id="temp8">21</span>
+                </div>
+            </div>
         </div>
-    </div>
-    
-    
+        <div class="subCookie">
+            <div class="col-1"><img class="Cookie" src="img/cookie.png"></div>
+            <div class="col2">
+                <h4 class="sub-titulo">Stop! Cookie Time</h4>
+                <p class="text">We use cookies (sadly not the edible ones)
+                    to personalize</p>
+                    <p class="text"> content and ads, to provide social media
+                    feactures and to</p>
+                    <p class="text"> analyse our traffic.<a href="#">Read more...</a></p>
+            </div>
+            <div class="col-3"><button class="Accept" onclick="accept()">I Accept</button></div>
+        </div>
     </div>
     <!-- Fin del container central-->
+
+    <script src="script.js"></script>
 </body>
 
 </html>
