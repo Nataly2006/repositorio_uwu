@@ -1,115 +1,49 @@
-from turtle import *
+import math
+import turtle
 
-#configuracion de colores
-title("Sunflower")
-hideturtle()
-pensize(3)
-fillcolor("yellow")
-#configuracion de colores
+turtle.bgcolor("black")
+turtle.shape("turtle")
+turtle.speed(0)
 
+turtle.goto(0, -40)
+turtle.pendown()
+h = 0
+phi = 137.508 * (math.pi / 180.0)
+for i in range(16):
+    for j in range(18):
+        turtle.color("yellow")
+        h += 0.005
+        turtle.rt(90)
+        turtle.circle(150 - j * 6, 90)
+        turtle.lt(90)
+        turtle.circle(150 - j * 6, 90)
+        turtle.rt(180)
+    turtle.circle(40, 24)
 
-#lineas y figuras
-begin_fill()
+turtle.penup()
+turtle.goto(0, 0)
+turtle.color("black")
+turtle.fillcolor("brown")
+turtle.begin_fill()
+turtle.circle(0)
+turtle.end_fill()
 
-pencolor("green")
-goto(0,0)
-goto(50,50)
-pencolor("yellow")
-circle(30)
-pencolor("yellow")
-goto(50,70)
-pencolor("brown")
-circle(10)
+phi = 137.508 * (math.pi / 180.0)
+for i in range(160 + 40):
+    r = 4 * math.sqrt(i)
+    theta = i * phi
+    x = r * math.cos(theta)
+    y = r * math.sin(theta)
+    turtle.penup()
+    turtle.goto(x, y)
+    turtle.setheading(i * 137.508)
+    turtle.pendown()
+    if i < 160:
+        turtle.stamp()
 
-pencolor("green")
-goto(0,0)
-goto(-50,50)
-pencolor("yellow")
-circle(30)
-pencolor("yellow")
+turtle.penup()
+turtle.goto(0, 300)
+turtle.color("White")
+turtle.write("uwu", align="center", font=("Arial", 24, "bold"))
 
-goto(-50,70)
-pencolor("brown")
-circle(10)
-
-pencolor("green")
-goto(0,0)
-goto(25,100)
-pencolor("yellow")
-
-circle(30)
-pencolor("yellow")
-
-goto(25,120)
-pencolor("brown")
-circle(10)
-
-pencolor("green")
-goto(0,0)
-goto(-25,100)
-pencolor("yellow")
-
-circle(30)
-pencolor("yellow")
-
-goto(-25,120)
-pencolor("brown")
-circle(10)
-
-pencolor("green")
-goto(0,0)
-goto(95,90)
-pencolor("yellow")
-
-circle(30)
-pencolor("yellow")
-
-goto(95,110)
-pencolor("brown")
-circle(10)
-
-pencolor("green")
-goto(0,0)
-goto(-95,90)
-pencolor("yellow")
-
-circle(30)
-pencolor("yellow")
-
-goto(-95, 110)
-pencolor("brown")
-circle(10)
-
-pencolor("green")
-goto(0,0)
-pencolor("yellow")
-goto(0,50)
-pencolor("yellow")
-
-circle(30)
-pencolor("green")
-
-goto(0,25)
-pencolor("yellow")
-goto(0,70)
-pencolor("brown")
-circle(10)
-goto(0,0)
-end_fill()
-
-fillcolor("brown")
-begin_fill()
-pencolor("brown")
-goto(0,25)
-goto(-100,25)
-goto(0,-100)
-goto(100,25)
-goto(0,25)
-goto(-100,25)
-end_fill()
-
-
-#fin lineas y figuras
-
-exitonclick()
-#click para finalizar y cerrar ventana
+turtle.done()
